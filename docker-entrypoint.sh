@@ -9,8 +9,8 @@ tail -n 0 -f /srv/logs/gunicorn.log /srv/logs/access.log &
 echo Starting Nginx
 echo Starting Gunicorn
 
-gunicorn .wsgi:application \
-    --name tea \
+gunicorn tracetest.wsgi:application \
+    --name tracetest \
     --bind unix:django_app.sock \
     --workers 10 \
     --timeout 60 \
