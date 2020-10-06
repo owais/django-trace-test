@@ -21,4 +21,5 @@ RUN nginx -t
 
 ENV SIGNALFX_ENDPOINT_URL='http://localhost:9080/v1/trace'
 
-CMD ./manage.py runserver 0.0.0.0:8000
+ADD ./docker-entrypoint.sh /app/
+ENTRYPOINT ["./docker-entrypoint.sh"]
