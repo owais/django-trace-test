@@ -3,9 +3,6 @@
 import os
 import sys
 
-print(os.environ)
-
-
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tracetest.settings')
     try:
