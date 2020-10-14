@@ -10,6 +10,7 @@ echo Starting Nginx
 echo Starting Gunicorn
 
 gunicorn tracetest.wsgi:application \
+    --config gunicorn.config.py \
     --name tracetest \
     --bind unix:django_app.sock \
     --workers 10 \
