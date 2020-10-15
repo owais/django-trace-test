@@ -20,4 +20,5 @@ from . import views
 
 urlpatterns = [
     path('hello', views.hello),
+    path('oauthtest', views.oauth_test),
 ]
