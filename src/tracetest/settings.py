@@ -194,7 +194,7 @@ LOGGING = {
         'file': {
             'class': 'logging.FileHandler',
             'formatter': 'simple',
-            'filename': '/srv/logs/django_debug.log',
+            'filename': '/tmp/django_debug.log',
             'delay': True  # If delay is true, then file opening is deferred until the first call to emit()
         }
     },
